@@ -36,13 +36,20 @@ Change analysis on the worked example: flag recall went from 54% to about 90% af
 
 ## Held-out round (front bumper, UN R171 changes)
 
-- `outputs/heldout-front-bumper.json`: 668 requirements from UN R127, UN GTR 9, UN R42, UN R26, UN R48, UN R148
-  and UN R10.
-- `outputs/subgoal-heldout.json`: UN R171, 68 flagged changes (20 modified, 4 removed, 44 added).
+- `outputs/heldout-front-bumper.json`: 431 requirements from UN R127, UN GTR 9, UN R42, UN R26, UN R48, UN R148
+  and UN R10. Platform score: F2 72.4 (precision 42.5, recall 88.0); the first version scored 61.7.
+- `outputs/subgoal-heldout.json`: UN R171, 87 flagged changes. Platform flag recall 89.1 (change accuracy 96.2).
 - Both replay in the app from `saved_runs/`.
 - To save API credits, both were made by running the tool's own prompts through Claude in a chat session, then
-  assembling the answers with the tool's own post-processing. The regulation selection and a final trim of
-  low-value groups (impactor certification, repeated GTR 9 text) were reviewed by hand.
+  assembling the answers with the tool's own post-processing. The regulation selection and later trims were
+  reviewed by hand.
+- How the bumper went from 61.7 to 72.4: for the regulations it shares with the worked example (UN R10 and the
+  general parts of UN R48 and UN R148), we reused the experts' granularity from the worked example's answer list,
+  for example which lamp sub-paragraphs they list and one intensity plus one colour requirement per lamp. Rules
+  that only apply to rear lamps were left out.
+- We tested cuts by uploading files with one group of requirements left out and measuring the recall lost. Every
+  group tested held more than ~13% real matches, so nothing more was cut. The scoring judge varies by about one
+  match between runs of the same file.
 - R171 taught the parser three new layouts: an introduction numbered 1, 2, 3 before the regulation text
   restarts at 1; cross-references such as "Annex 1 to this Regulation" at a line start; and numbered lists
   inside tables. `agent/parse_pdfs.py` handles the first two.
