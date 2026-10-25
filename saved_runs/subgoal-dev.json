@@ -1,0 +1,225 @@
+{
+ "team_id": "team-03",
+ "case_id": "subgoal-dev",
+ "changes": [
+  {
+   "requirement_id": "R-015",
+   "change": "modified",
+   "reason": "Paragraph 5.1.2 of the new version adds a further criterion to the misapplication definition: \"An accelerator control application resulting in continuous acceleration and having a velocity of at least 400 per cent per second ...\" (the words \"resulting in continuous acceleration and\" are new).",
+   "source": {
+    "page": 4,
+    "paragraph": "5.1.2"
+   },
+   "new_text": "The accelerator control application resulting in continuous acceleration and having a velocity of at least 400 per cent per second over a travel distance of at least 70 per cent of the total travel distance of the accelerator control, and reaching a maximum position of the accelerator control of at least 90 per cent with that velocity shall be regarded as an accelerator control misapplication in the context of the paragraph 5.1.1."
+  },
+  {
+   "requirement_id": "R-018",
+   "change": "modified",
+   "reason": "Paragraph 5.1.4 of the new version extends the scope from \"accelerated from standstill\" to \"accelerated both from standstill and, as relevant, while creeping\".",
+   "source": {
+    "page": 5,
+    "paragraph": "5.1.4"
+   },
+   "new_text": "When the vehicle is accelerated both from standstill and, as relevant, while creeping, the ACPE shall control acceleration."
+  },
+  {
+   "requirement_id": "R-021",
+   "change": "modified",
+   "reason": "Paragraph 5.1.5 of the new version: the obstacle distance changes from \"located between 1.0 m and 1.5 m\" to \"located not more than 1.5 m\"; the reference time changes from \"at the time the accelerator control is applied\" to \"at the time the triggering conditions (as outlined in paragraph 5.1.2.) are achieved\"; new condition (b)(vi) \"If the vehicle is equipped with rear hatches, trunk lids or tailgates, they are closed and latched in the normal conditions of vehicle operation\"; old (d)(ii) \"The lateral offset between the centreline of the obstacle and the centreline of the vehicle is not more than 0.2 m\" is replaced by (d)(ii) \"In the case of a vehicle obstacle, the centre line of the obstacle is located between two vertical longitudinal planes defining the extreme outer edge of the vehicle\"; new (d)(iii) \"In the case of a wall obstacle, the overlap between wall and vehicle is at least 1.0 m\" and (d)(iv) \"In the case of a pedestrian obstacle ... not more than 25 per cent of the vehicle width\"; (d)(vi) (old (d)(iv)) adds \"or a silhouette of a pedestrian that relates to a human being\"; new (d)(vii) \"The obstacle is located at least 1.0m from the vehicle at the time the triggering conditions ... are achieved\" and (d)(viii) \"The vehicle is travelling at or below its maximum creeping speed in the forward direction and at or below 4km/h in rearward direction\" (footnote 3: to be reviewed by September 2032). Unchanged conditions (a), (b)(i)-(v), (c), (d)(i) and (d)(v) are cited by reference to keep the text under 1,500 characters.",
+   "source": {
+    "page": 5,
+    "paragraph": "5.1.5"
+   },
+   "new_text": "When the triggering conditions (as outlined in paragraph 5.1.2.) are achieved, the ACPE shall limit vehicle acceleration in order to prevent or mitigate a collision with an obstacle located not more than 1.5 m in front of or behind the vehicle, in the vehicle path, provided the conditions of paragraph 5.1.5. (a), (b)(i) to (v), (c), (d)(i) and (d)(v) are met and: (b)(vi) If the vehicle is equipped with rear hatches, trunk lids or tailgates, they are closed and latched in the normal conditions of vehicle operation; (d)(ii) In the case of a vehicle obstacle, the centre line of the obstacle is located between two vertical longitudinal planes defining the extreme outer edge of the vehicle; (d)(iii) In the case of a wall obstacle, the overlap between wall and vehicle is at least 1.0 m; (d)(iv) In the case of a pedestrian obstacle, the distance between the centre line of the pedestrian obstacle and the centre line of the vehicle is not more than 25 per cent of the vehicle width; (d)(vi) The obstacle is a vehicle of category M1, or a wall-like structure with a width of at least 2.0 m and a height of at least 1.0 m or a silhouette of a pedestrian that relates to a human being; (d)(vii) The obstacle is located at least 1.0m from the vehicle at the time the triggering conditions (as outlined in paragraph 5.1.2.) are achieved; (d)(viii) The vehicle is travelling at or below its maximum creeping speed in the forward direction and at or below 4km/h in rearward direction."
+  },
+  {
+   "requirement_id": null,
+   "change": "added",
+   "reason": "New paragraph 5.1.4.1 in the new version: \"An ACPE intervention is not required when: (a) there is an AEBS warning or intervention occurring; or (b) the vehicle speed is greater than 10 km/h.\" (old 5.1.4.1 is renumbered 5.1.4.2).",
+   "source": {
+    "page": 5,
+    "paragraph": "5.1.4.1"
+   },
+   "new_text": "When (a) there is an AEBS warning or intervention occurring; or (b) the vehicle speed is greater than 10 km/h, the ACPE shall not be required to perform an intervention."
+  },
+  {
+   "requirement_id": null,
+   "change": "added",
+   "reason": "New paragraph 5.1.6.2 \"Acceleration while creeping\" in the new version: \"In the case a collision is not prevented, the ACPE shall reduce the effective demand of the accelerator control to zero at or before the point of collision.\"",
+   "source": {
+    "page": 6,
+    "paragraph": "5.1.6.2"
+   },
+   "new_text": "For acceleration while creeping, when a collision is not prevented, the ACPE shall reduce the effective demand of the accelerator control to zero at or before the point of collision."
+  },
+  {
+   "requirement_id": "R-084",
+   "change": "modified",
+   "reason": "In the new version the offset sentence moved from paragraph 6.5 to paragraph 6.5.2 (under the new heading \"Offset of vehicle and target\") and changed: \"the centreline of the target\" became \"the centreline of the vehicle target\", and the upper limit \"0.2 m\" became \"the distance to extreme outer edge of the vehicle\". The \"Tolerance on the lateral (offset) distance\" column (\"+/-0.2\") was also dropped from Table 1.",
+   "source": {
+    "page": 10,
+    "paragraph": "6.5.2"
+   },
+   "new_text": "For the accelerator control misapplication test, the lateral offset between the centreline of the vehicle target and the centreline of the vehicle shall be between 0.0 m and the distance to extreme outer edge of the vehicle."
+  },
+  {
+   "requirement_id": "R-085",
+   "change": "modified",
+   "reason": "Old paragraph 6.5 became paragraph 6.6 \"Test procedures\" in the new version: \"The test procedure shall be performed\" became \"The test procedures shall be performed\"; \"with and without an expected ACPE intervention\" was removed from this sentence (it now appears, reworded, in paragraph 6.6.1.1 and is listed as added); \"with the vehicle situated 1.0 m ... and 1.5 m ... from the target position at the start of the test\" became \"with the ACPE interventions triggered at 1.0 m ... and 1.5 m ... distance from the target position\". Table 1 now gives the \"Distance to target at the point triggering conditions achieved\" and no longer has the lateral tolerance or \"Presence of target\" columns.",
+   "source": {
+    "page": 10,
+    "paragraph": "6.6"
+   },
+   "new_text": "The accelerator control misapplication test procedures shall be performed both in a forward and rearward direction and at least with the ACPE interventions triggered at 1.0 m (+0.1 m tolerance) and 1.5 m (-0.1 m tolerance) distance from the target position (as detailed in Table 1)."
+  },
+  {
+   "requirement_id": "R-086",
+   "change": "modified",
+   "reason": "Step (a) moved from paragraph 6.5 to paragraph 6.6.1.2 of the new version, and \"a distance to the target\" became \"a distance to the relevant target\". The lead-in now reads \"The procedure for each test with a stationary (non-creeping) vehicle shall be as follows\".",
+   "source": {
+    "page": 10,
+    "paragraph": "6.6.1.2"
+   },
+   "new_text": "The procedure for each accelerator control misapplication test with a stationary (non-creeping) vehicle shall be to position the vehicle at a distance to the relevant target or speed measurement point as defined in Table 1."
+  },
+  {
+   "requirement_id": "R-090",
+   "change": "removed",
+   "reason": "The old paragraph 6.5 sentence \"Before any test is started the vehicle may be driven in the direction of the target for a distance of up to 20 m to the start position and/or the engine may be switched “off” and “on”, if requested by the manufacturer\" no longer appears anywhere in section 6 of the new version. Paragraph 6.6.1.2 ends at step (d), and the new creeping-vehicle procedure in paragraph 6.6.2 has nothing like it.",
+   "source": {
+    "page": 10,
+    "paragraph": "6.5"
+   }
+  },
+  {
+   "requirement_id": null,
+   "change": "added",
+   "reason": "Paragraph 6.4.2 is new in the new version: \"The targets used for the pedestrian detection tests shall be a child articulated \\\"soft target\\\" in its resting position with the articulation being switched off ... according to ISO 19206-2:2018\". The old version had no pedestrian target.",
+   "source": {
+    "page": 10,
+    "paragraph": "6.4.2"
+   },
+   "new_text": "The targets used for the pedestrian detection tests shall be a child articulated \"soft target\" in its resting position with the articulation being switched off and be representative of the human attributes applicable to the sensor system of the ACPE under test according to ISO 19206-2:2018."
+  },
+  {
+   "requirement_id": null,
+   "change": "added",
+   "reason": "Paragraph 6.5.1 is new in the new version: \"The reference point for the location of the vehicle shall be the most rearward point on the centreline of the vehicle when going rearwards, and the most forward point of the vehicle when going forwards\".",
+   "source": {
+    "page": 10,
+    "paragraph": "6.5.1"
+   },
+   "new_text": "The reference point for the location of the vehicle shall be the most rearward point on the centreline of the vehicle when going rearwards, and the most forward point of the vehicle when going forwards."
+  },
+  {
+   "requirement_id": null,
+   "change": "added",
+   "reason": "Paragraph 6.5.3 is new in the new version and sets a test condition for the pedestrian obstacle: \"The lateral offset between the centre line of the pedestrian obstacle and the centre line of the vehicle is not more than 25 per cent of the vehicle width\".",
+   "source": {
+    "page": 10,
+    "paragraph": "6.5.3"
+   },
+   "new_text": "The lateral offset between the centre line of the pedestrian obstacle and the centre line of the vehicle shall be not more than 25 per cent of the vehicle width."
+  },
+  {
+   "requirement_id": null,
+   "change": "added",
+   "reason": "Paragraph 6.5.5 is new in the new version: \"The orientation of the vehicle target shall be 0° or 180° respectively as defined in ISO 19206-3:2021, chosen by the technical service\". (New paragraph 6.5.4, which only says the pedestrian target orientation \"is to be determined by the technical service\", is not listed.)",
+   "source": {
+    "page": 10,
+    "paragraph": "6.5.5"
+   },
+   "new_text": "The orientation of the vehicle target shall be 0° or 180° respectively as defined in ISO 19206-3:2021, chosen by the technical service."
+  },
+  {
+   "requirement_id": null,
+   "change": "added",
+   "reason": "New paragraph 6.6.1.1 (\"Test procedure for a stationary vehicle\") reads \"Each test condition according to Table 1 shall be tested with and without the presence of the target\". This replaces the old paragraph 6.5 wording \"with and without an expected ACPE intervention\", which was removed from the general sentence in paragraph 6.6 (see R-085) and is now limited to stationary-vehicle tests. The rest of the paragraph (\"the ACPE shall be deactivated if necessary, and may be combined where feasible\") repeats what the old Table 1 legend already said, which no old requirement covered, so it is not listed.",
+   "source": {
+    "page": 10,
+    "paragraph": "6.6.1.1"
+   },
+   "new_text": "For the test procedure for a stationary vehicle, each test condition according to Table 1 shall be tested with and without the presence of the target."
+  },
+  {
+   "requirement_id": null,
+   "change": "added",
+   "reason": "New paragraph 6.6.2.1 (\"Test procedure for a creeping vehicle\", new in the new version): \"Each test condition according to Table 1 shall be tested once with a starting point and a profile of the accelerator control application selected at the discretion of the Technical Service\".",
+   "source": {
+    "page": 11,
+    "paragraph": "6.6.2.1"
+   },
+   "new_text": "For the test procedure for a creeping vehicle, each test condition according to Table 1 shall be tested once with a starting point and a profile of the accelerator control application selected at the discretion of the Technical Service."
+  },
+  {
+   "requirement_id": null,
+   "change": "added",
+   "reason": "New paragraph 6.6.2.1 item (a) in the new version: the starting point and profile \"shall be selected such that the triggering condition (as outlined in paragraph 5.1.2.) is achieved as close to: (a) The maximum creeping speed in the forward direction ... As reasonably practical whilst remaining at or below that speed and avoiding any AEBS warning or intervention which results in an ACPE intervention not occurring\".",
+   "source": {
+    "page": 11,
+    "paragraph": "6.6.2.1"
+   },
+   "new_text": "For the test procedure for a creeping vehicle, the starting point and the accelerator control application profile shall be selected such that the triggering condition (as outlined in paragraph 5.1.2.) is achieved as close to the maximum creeping speed in the forward direction as reasonably practical whilst remaining at or below that speed and avoiding any AEBS warning or intervention which results in an ACPE intervention not occurring."
+  },
+  {
+   "requirement_id": null,
+   "change": "added",
+   "reason": "New paragraph 6.6.2.1 item (b) in the new version: the starting point and profile \"shall be selected such that the triggering condition (as outlined in paragraph 5.1.2.) is achieved as close to: ... (b) 4km/h in the rearward direction, As reasonably practical whilst remaining at or below that speed and avoiding any AEBS warning or intervention which results in an ACPE intervention not occurring\".",
+   "source": {
+    "page": 11,
+    "paragraph": "6.6.2.1"
+   },
+   "new_text": "For the test procedure for a creeping vehicle, the starting point and the accelerator control application profile shall be selected such that the triggering condition (as outlined in paragraph 5.1.2.) is achieved as close to 4km/h in the rearward direction as reasonably practical whilst remaining at or below that speed and avoiding any AEBS warning or intervention which results in an ACPE intervention not occurring."
+  },
+  {
+   "requirement_id": null,
+   "change": "added",
+   "reason": "New paragraph 6.6.2.2 step (a) in the new version: \"Position the vehicle at the selected starting point as determined by paragraph 6.6.2.1\".",
+   "source": {
+    "page": 11,
+    "paragraph": "6.6.2.2"
+   },
+   "new_text": "The procedure for each test with a creeping vehicle shall be to position the vehicle at the selected starting point as determined by paragraph 6.6.2.1."
+  },
+  {
+   "requirement_id": null,
+   "change": "added",
+   "reason": "New paragraph 6.6.2.2 step (b) in the new version (creeping-vehicle procedure): \"Hold the vehicle stationary and select the corresponding driving direction\".",
+   "source": {
+    "page": 11,
+    "paragraph": "6.6.2.2"
+   },
+   "new_text": "The procedure for each test with a creeping vehicle shall hold the vehicle stationary and select the corresponding driving direction."
+  },
+  {
+   "requirement_id": null,
+   "change": "added",
+   "reason": "New paragraph 6.6.2.2 step (c) in the new version: \"Release the braking system so that the vehicle starts creeping\".",
+   "source": {
+    "page": 11,
+    "paragraph": "6.6.2.2"
+   },
+   "new_text": "The procedure for each test with a creeping vehicle shall release the braking system so that the vehicle starts creeping."
+  },
+  {
+   "requirement_id": null,
+   "change": "added",
+   "reason": "New paragraph 6.6.2.2 step (d) in the new version: \"Operate the accelerator control in order to achieve the relevant triggering conditions (as outlined in paragraph 5.1.2.) at the point the vehicle has reached the distance to target according to Table 1\".",
+   "source": {
+    "page": 11,
+    "paragraph": "6.6.2.2"
+   },
+   "new_text": "The procedure for each test with a creeping vehicle shall operate the accelerator control in order to achieve the relevant triggering conditions (as outlined in paragraph 5.1.2.) at the point the vehicle has reached the distance to target according to Table 1."
+  },
+  {
+   "requirement_id": null,
+   "change": "added",
+   "reason": "New paragraph 6.6.2.2 step (e) in the new version: \"In the case a collision is not prevented the manufacturer shall demonstrate to the satisfaction of the technical service that the intervention complies with the requirements of paragraph 5.1.6.2\".",
+   "source": {
+    "page": 11,
+    "paragraph": "6.6.2.2"
+   },
+   "new_text": "If a collision is not prevented in a test with a creeping vehicle, then the manufacturer shall demonstrate to the satisfaction of the technical service that the intervention complies with the requirements of paragraph 5.1.6.2."
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+# secrets
+api_key.txt
+.env
+# the organizers' hackathon data (for use in the hackathon only): fetched locally, never committed
+regulations/
+cases/
+subgoal/
+schemas/
+data/
+static/
+agent/expert_examples.json
+# local environment
+.venv/
+__pycache__/
+.DS_Store

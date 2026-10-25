@@ -1,0 +1,58 @@
+HOW CERTIVITY'S EXPERTS WRITE A REQUIREMENT
+(from requirement-writing standards: INCOSE Guide for Writing Requirements, NASA SE Handbook Appendix C,
+ISO/IEC/IEEE 29148, the EARS templates; and measured on 94 requirements the same experts wrote from UN R175)
+
+1. One sentence, one obligation, exactly one "shall" (or "shall not"). Never a fragment, a heading, a description,
+   a definition or a bare permission. 99% of the experts' requirements contain "shall"; none is a "Heading: value".
+2. An explicit subject that must comply, in active voice where the regulation allows: "The ACPE shall indicate
+   ..." rather than "information shall be indicated". Resolve "it", "they", "these", "such lamps", and turn
+   heading-style text into a sentence: "Vertical angle: 15° above and below the horizontal" becomes "The vertical
+   angle of <the device> shall be 15° above and below the horizontal". About 60% of expert requirements start "The".
+3. Conditions go first, in EARS form (about 35% of expert requirements):
+   - state:       "While <state holds>, the <subject> shall ..."
+   - event:       "When <event / trigger>, the <subject> shall ..."
+   - feature:     "Where <the vehicle / device has feature X>, the <subject> shall ..."
+   - failure:     "If <failure / unwanted event>, then the <subject> shall ..."
+   - scope:       "For <vehicle category / test / device class>, the <subject> shall ..."
+   Replace "in case of", "as soon as", "following", "during" by the matching keyword. Keep the regulation's own
+   words for the condition itself.
+4. Relaxations, exemptions and alternatives of the same obligation stay inside it, at the end: "..., except that
+   <exception>" or "..., unless <condition>". A "However ...", "This requirement does not apply ...",
+   "... may be reduced to 5°" or "Alternatively, at the choice of the manufacturer ..." sentence is NOT a requirement
+   of its own: fold it into the requirement it relaxes.
+5. Permissions ("may", "is permitted", "provided that") are not requirements by themselves. Either turn the
+   condition into an obligation ("Lamps may be grouped ... provided that all requirements ... are fulfilled"
+   becomes "While lamps are grouped ..., the lamps shall fulfil all requirements ..."), or fold the permission
+   into the obligation it relaxes (rule 4). A permission that sets no obligation is dropped.
+6. Keep the regulation's wording for the obligation itself: values, units, tolerances, angles, colours, table and
+   paragraph references ("as specified in paragraph 5.4.3.", "Table 2b"), named standards. Restructure, do not
+   paraphrase, shorten or round, and do not add anything the regulation does not say (no unit conversions, no
+   explanations in brackets).
+7. Still two obligations in one item (two "shall"s with different constraints, or a list)? Split it, repeating the
+   subject and the condition in each part. Two items that state the same obligation? Keep one.
+8. Duties of the manufacturer, applicant or authority to declare, justify, submit or notify are usually not written
+   as product requirements unless they are the subject of the regulation itself.
+
+9. Do not split one obligation into pieces. When the parts joined by "and", "or" or "and/or" describe the same
+   obligation, keep them in one requirement:
+   - paired qualities of the same thing: "The labels shall be durable and easily readable." is one requirement.
+   - a number together with its approval or type: "The number of mirrors shall be two, approved as Class III
+     devices according to Regulation No. 46." is one requirement.
+   - several values or ranges of the same limit in one sentence: "The limit shall be 40 to 30 dB in the 10 to 50 MHz
+     band and 30 to 35 dB in the 50 to 100 MHz band." is one requirement.
+   - alternatives: "The plug shall be such that it cannot be fitted in any socket of type A and/or type B." is one
+     requirement.
+   Split only separate sentences, two different actions or results ("shall be fixed securely" / "shall not rattle"),
+   and lists ((a), (b), (c), or a list of separate devices each given the obligation).
+10. A case with its own obligation is its own requirement. When a paragraph gives the main rule and then a case that
+   adds an obligation for another device or situation, write that case as a separate requirement that starts with
+   Where / When / If and repeats what is required, in addition to the main rule. For example "However, where
+   additional sensors are fitted, they shall be mounted at least 300 mm apart" becomes "Where additional sensors are
+   fitted, the additional sensors shall be mounted at least 300 mm apart." The same holds for "when determining X,
+   the area Y shall be excluded", "when the unit is combined with another function, it shall meet ...", and "in the
+   case of type B, a check shall be made that ...". Fold a clause into the main rule with "except that" (rule 4) only
+   when it relaxes or lifts the same obligation for the same subject ("... may be reduced to 5°", "this does not
+   apply when ...").
+11. Keep the regulation's own subject. When the sentence already names its subject ("the limits", "the markings",
+   "the lamps"), keep that subject as written; do not add qualifiers the sentence does not have ("all", "broadband",
+   "of the device", the product's name). Replace only pronouns and headings (rule 2).
