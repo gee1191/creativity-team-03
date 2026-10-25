@@ -37,7 +37,8 @@ Change analysis on the worked example: flag recall went from 54% to about 90% af
 ## Held-out round (front bumper, UN R171 changes)
 
 - `outputs/heldout-front-bumper.json`: 431 requirements from UN R127, UN GTR 9, UN R42, UN R26, UN R48, UN R148
-  and UN R10. Platform score: F2 72.4 (precision 42.5, recall 88.0); the first version scored 61.7.
+  and UN R10. Platform score: F2 73.2 on the counting upload (72.4 on an earlier upload of the same file); the first
+  version scored 61.7.
 - `outputs/subgoal-heldout.json`: UN R171, 72 flagged changes. Platform flag recall 87.5 to 89.1 across uploads of
   this same file (precision about 78, change accuracy about 94).
 - Both replay in the app from `saved_runs/`.
